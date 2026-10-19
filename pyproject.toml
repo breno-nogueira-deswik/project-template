@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nome-do-projeto"
+version = "0.1.0"
+requires-python = ">=3.13,<3.14"
+
+# Instalação em modo editável (`pip install -e .`) deixa `config` e `src.*`
+# importáveis de qualquer lugar (main.py, notebooks/, tests/) sem sys.path.
+[tool.setuptools]
+py-modules = ["config"]
+
+[tool.setuptools.packages.find]
+include = ["src*"]

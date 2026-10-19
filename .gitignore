@@ -1,0 +1,29 @@
+# Segredos
+.env
+
+# Dados e saídas (podem conter informações internas da Deswik)
+# Ignora o conteúdo, mas mantém a estrutura de pastas via .gitkeep
+data/raw/*
+data/processed/*
+data/output/*
+logs/*
+!.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Ferramentas locais
+.claude/settings.local.json
+.vscode/
+.idea/
+
+# SO / Office
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*.xlsx
